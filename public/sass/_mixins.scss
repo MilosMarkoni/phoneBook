@@ -1,0 +1,12 @@
+@mixin calc($property, $expression , $isImportant: false) {
+	$string: null;
+	@if $isImportant == true {
+	$string: !important;
+	}
+	@else {
+		$string: null;
+		}
+  #{$property}: -moz-calc(#{$expression}) $string;
+  #{$property}: -webkit-calc(#{$expression}) $string;
+  #{$property}: calc(#{$expression}) $string;
+}

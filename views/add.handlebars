@@ -1,0 +1,32 @@
+<div class="ui-panel">
+    <form method="POST" action="/add">
+        <div class="ui-panel-grid">
+
+            <div class="row">
+                <label class="ui-header">New contact</label>
+                <a href="/" class="ui-button white ui-float__right">Go back</a>
+                <p class="clear" />
+            </div>
+
+            <div class="row">
+                <label>First name:*</label>
+                <input type="text" name="firstname" placeholder="First name" required>
+            </div>
+
+            <div class="row">
+                <label>Last name:*</label>
+                <input type="text"  name="lastname" placeholder="Last name" required>
+            </div>
+
+            <div class="row">
+                <label>Phone number:*</label>
+                <input type="number"  name="phonenumber" placeholder="Phone number" required>
+            </div>
+
+            <div class="ui-panel-footer">
+                <button type="submit" class="ui-button green" class="button">Confirm</button>
+            </div>
+            
+        </div>
+    </form>
+</div>

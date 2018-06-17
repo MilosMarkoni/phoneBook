@@ -1,0 +1,51 @@
+<div class="ui-panel ui-phonebook">
+    <div class="ui-panel-table__wrapper">
+        <div class="row">
+            <label class="ui-header">Phonebook</label>
+           
+            <a href="/remove" class="ui-button red ui-float__right">Remove contact</a>
+            <a href="/add" class="ui-button green ui-push-right ui-float__right">New contact</a>
+            <p class="clear" />
+        </div>
+        <div class="row ui-remove__border ui-footer-padding">
+            {{#if projects}}
+                <table id="phonebook">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Phone number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                {{#each projects}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{firstName}}</td>
+                        <td>{{lastName}}</td>
+                        <td>0{{phoneNumber}}</td>
+                    </tr>
+                {{/each}}
+                    </tbody>
+                </table>
+                {{else}}
+                <table id="phonebook">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Phone number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">No contacts, please add a new contact.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            {{/if}}
+        </div>
+    </div>
+</div>

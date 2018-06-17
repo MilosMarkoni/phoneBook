@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "robotolight";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 7, ../sass/style.scss */
+body {
+  background: #f5f6f7;
+  margin: 0;
+  font-family: robotoregular;
+}
+
+/* line 13, ../sass/style.scss */
+.ui-panel {
+  width: 100%;
+  position: absolute;
+  top: -moz-calc(50% - 100px);
+  top: -webkit-calc(50% - 100px);
+  top: calc(50% - 100px);
+}
+/* line 18, ../sass/style.scss */
+.ui-panel.ui-remove-form {
+  top: -moz-calc(50% - 75px);
+  top: -webkit-calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+/* line 21, ../sass/style.scss */
+.ui-panel.ui-phonebook {
+  top: 100px;
+}
+/* line 24, ../sass/style.scss */
+.ui-panel-grid {
+  border: 1px solid #e0e0e0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 0 auto;
+}
+/* line 34, ../sass/style.scss */
+.ui-panel-table__wrapper {
+  border: 1px solid #e0e0e0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 44, ../sass/style.scss */
+.ui-panel-footer {
+  padding-top: 10px;
+  text-align: right;
+}
+/* line 54, ../sass/style.scss */
+.ui-panel .dataTables_wrapper label {
+  width: auto;
+  padding-bottom: 10px;
+}
+
+/* line 61, ../sass/style.scss */
+.row {
+  padding: 10px 0;
+  border-bottom: 1px solid #d1d9ed;
+}
+/* line 64, ../sass/style.scss */
+.row:first-child {
+  padding-top: 0;
+}
+/* line 68, ../sass/style.scss */
+.row label {
+  font-family: "robotoregular";
+  font-size: 14px;
+  width: 110px;
+  display: block;
+  float: left;
+  line-height: 28px;
+  font-weight: 600;
+}
+/* line 77, ../sass/style.scss */
+.row label.ui-header {
+  font-size: 16px;
+  color: #3399cc;
+  width: auto;
+}
+/* line 83, ../sass/style.scss */
+.row input {
+  height: 28px;
+  line-height: 28px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: -moz-calc(100% - 110px);
+  width: -webkit-calc(100% - 110px);
+  width: calc(100% - 110px);
+  padding-left: 10px;
+}
+/* line 94, ../sass/style.scss */
+.row.ui-remove__border {
+  border: 0;
+}
+/* line 97, ../sass/style.scss */
+.row.ui-footer-padding {
+  padding-bottom: 4px;
+}
+
+/* line 102, ../sass/style.scss */
+.ui-button {
+  padding: 10px 20px;
+  height: 30px;
+  line-height: 7px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 95px;
+}
+/* line 115, ../sass/style.scss */
+.ui-button.ui-push-right {
+  margin-right: 10px;
+}
+/* line 119, ../sass/style.scss */
+.ui-button.white {
+  background: #f5f7fa;
+  border: 1px solid #adadad;
+  color: #212121;
+}
+/* line 125, ../sass/style.scss */
+.ui-button.green {
+  background: #5dd340;
+  border: 1px solid #5dd340;
+  color: white;
+}
+/* line 130, ../sass/style.scss */
+.ui-button.red {
+  background: #e5356f;
+  border: 1px solid #b6174c;
+  color: white;
+}
+
+/* line 137, ../sass/style.scss */
+.clear {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+
+/* line 145, ../sass/style.scss */
+.ui-float__right {
+  float: right;
+}
+/* line 148, ../sass/style.scss */
+.ui-float__left {
+  float: left;
+}
+/* line 151, ../sass/style.scss */
+.ui-float__center {
+  float: none;
+}
+
+/* line 156, ../sass/style.scss */
+table.dataTable {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+/* line 162, ../sass/style.scss */
+table.dataTable thead th {
+  border: 1px solid #e1e1e1;
+}
+/* line 166, ../sass/style.scss */
+table.dataTable td {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+/* line 173, ../sass/style.scss */
+table.dataTable tr.even {
+  background: #fbfbfb;
+}
